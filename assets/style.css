@@ -1,0 +1,1612 @@
+:root {
+    --primary-color: #2EC4B6;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.top-bar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;  
+}
+
+.top-bar .container {
+    max-width: 100%;
+    width: 100%;
+}
+.top-bar .open-hours {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 18px;
+
+}
+.top-bar .social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    width: 100%;  
+}
+.navbar-brand img {
+    height: 60px;
+}
+
+.navbar .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
+    font-size:20px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+/* Appointment Button */
+.appointment-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:18px;
+    border-radius: 12px;
+    border: none;
+    display: inline-block;
+}
+
+.appointment-btn:hover {
+    background-color: #25b3a6;
+}
+@media (max-width:272px) {
+    .navbar-toggler{
+        margin-top: 10px;
+    }
+    .appointment-btn{
+ 
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width:272px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .navbar-brand img {
+        height: 40px; 
+        max-width: 100px; 
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px;
+    }
+
+    .appointment-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .navbar-toggler{
+        margin-top: 10px;
+    }
+    .appointment-btn{
+ 
+    }
+}
+section {
+    width: 100%;
+    max-width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+}
+.hero {
+    background: url('https://rykit.rometheme.pro/remedicare/wp-content/uploads/sites/17/2022/08/teshero5.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    padding: 80px 20px;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.dental-text{
+    font-size:28px;
+    color: #2EC4B6;
+}
+.main-text{
+    font-size:70px;
+    font-weight:540;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif
+
+}
+.para-text{
+    font-size:17px;
+    color:#4D4D4D;
+    padding-top: 15px;
+    line-height: 200%;
+
+}
+.elementor-button{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 18px 45px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:18px;
+    border-radius: 12px;
+    border: none; 
+    display: inline-block;
+}
+.sec-section {
+    padding: 120px 35px;
+}
+
+.sec-img {
+    border-radius: 12px;
+    width: 100%; 
+    height: auto;
+}
+.sec-heading{
+    font-size:40px;
+    font-weight:550;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    padding-top: 15px;
+
+}
+.sec-text{
+    color:#2EC4B6;
+    font-size: 22px;
+    font-weight: 500;
+}
+.opening-hours-card {
+    background: #2ec4b6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 250px;
+    right: 12px;
+    width: 60%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.open-hours-title{
+    text-align:center;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+/* .open-hours-text{
+    font-size:16px;
+} */
+.opening-hours-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.opening-hours-card p {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed white;
+    padding-bottom: 5px;
+}
+
+.progress-section {
+    margin-top: 20px;
+}
+
+.progress-title {
+    font-size: 21px;
+    font-weight:500;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 8px;
+    background-color: #cbf3f0 !important;
+    border-radius: 8px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #2EC4B6 !important;
+    border-radius: 8px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+    line-height: 8px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: attr(style);
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: #26B8B5;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+@media (max-width: 1024px) {
+    .sec-section .row {
+        flex-direction: row;
+    }
+
+    .opening-hours-card {
+        position: relative; /* Moves the card below the image */
+        top: unset;
+        right: unset;
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .sec-container {
+        margin-top: 30px; 
+        padding-top: 30px; 
+
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-section .row {
+        flex-direction: column; 
+    }
+
+    .col-lg-6 {
+        width: 100%; 
+    }
+
+    .opening-hours-card {
+        order: 2; 
+        width: 100%;
+    }
+
+    .sec-container {
+        order: 3; 
+        padding-top: 30px; 
+
+    }
+}
+.third-sect{
+    background-color: #f1fffe;
+    padding-top: 80px;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0!important;
+    background-color: #f0fdfd;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.services-left, .services-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: left;
+}
+
+
+.service-item img {
+    width: 70px;
+    height: 70px;
+    background-color: #2cc8c3;
+    border-radius: 10px;
+}
+.serv-title{
+    font-size: 23px;
+    font-weight :650;
+}
+.doctor-image {
+    width: 40%;
+    text-align: center;
+}
+
+.doctor-image img {
+    width: 100%;
+    max-width: 400px; 
+    height: 500px; 
+    object-fit: cover;
+}
+
+
+.card-custom {
+    background-color: #f0fdfd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:1px solid #b6e2df;
+    transition: transform 0.3s ease-in-out;
+}
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+.icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.card-container{
+    display:none;
+}
+@media (max-width: 1024px) {
+    .services-container {
+        display: none;
+    }
+    .card-container {
+        display: block;
+        padding:15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container .row {
+        flex-direction: column;
+        padding:15px;
+
+    }
+    .card-container .col-md-6 {
+        width: 100%;
+        padding:15px;
+
+    }
+}
+.stats-section {
+    background-color: #2EC4B6;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stats-item h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.stats-item p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.tooth-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: transparent;
+}
+.tooth-icon img {
+    width: 70px;
+    height: auto;
+}
+
+/* Hide the tooth column on tablets and smaller */
+@media (max-width: 1024px) {
+    .tooth-column {
+        display: none!important;
+    }
+}
+
+/* 2 columns per row between 768px to 350px */
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stats-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* 1 column per row below 350px */
+@media (max-width: 350px) {
+    .stats-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+.que-section{
+    padding: 120px 35px;
+}
+
+.que-heading{
+    font-size:42px;
+    font-weight:550;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    padding-top: 15px;
+
+}
+.que-text{
+    color:#2EC4B6;
+    font-size: 22px;
+    font-weight: 500;
+}
+.question-card{
+    background: #2ec4b6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    align-content: center;
+    top: 380px;
+    left: 12.5px;
+    width: 45%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.question-card-title{
+    text-align:center;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.question-card h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.phone-call-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px; 
+    height: 55px;
+    margin: 0 auto 20px; 
+}
+.que-services-left, .que-services-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+}
+
+.que-service-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: left;
+}
+
+.que-service-item img {
+    width: 70px; 
+    height: 70px; 
+    background-color: #2EC4B6; 
+    border-radius: 10px; 
+    padding: 10px; 
+    object-fit: contain; 
+    display: block;
+}
+
+.que-serv-title{
+    font-size: 24px;
+    font-weight :650;
+}
+@media (min-width: 1024px) {  
+    .que-section .row {
+        flex-direction: row-reverse; 
+    }
+}
+@media (max-width: 1024px) {
+    .que-section .row {
+        flex-direction: row-reverse;
+    }
+
+    .question-card {
+        position: relative; 
+        top: unset;
+        right: unset;
+        left:unset;
+        width: 100%; 
+        margin-top: 0px; 
+        bottom: -10px;
+
+    }
+
+    .que-container {
+        margin-top: 30px; 
+        padding-top: 30px; 
+
+    }
+}
+
+@media (max-width: 768px) {
+    .que-section .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        width: 100%; 
+    }
+
+    .question-card {
+        order: 2; 
+        width: 100%;
+    }
+
+    .que-container {
+        order: 3; 
+        padding-top: 30px; 
+
+    }
+}
+/* Testimonial Section */
+.testimonial-section {
+    position: relative;
+    padding: 60px 20px; 
+    text-align: center;
+    color: black;
+    background: url('https://rykit.rometheme.pro/remedicare/wp-content/uploads/sites/17/2022/08/testesti1.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+/* Overlay */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cbf3f0; 
+    opacity: 0.85;
+}
+
+/* Content */
+.testimonial-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Titles */
+.testimonial-title {
+    color: #2EC4B6;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.testimonial-heading {
+    font-size: 40px; 
+    font-weight: 550;
+    font-family: 'Roboto', 'Inter', Georgia, Times, 'Times New Roman', serif;
+    padding-top: 10px;
+    padding-bottom: 35px; 
+}
+
+.testimonial-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px; 
+    font-weight: 500;
+    color: #000;
+}
+
+/* Profile */
+.testimonial-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Avatar */
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #2EC4B6;
+    object-fit: cover;
+}
+
+/* Client Info */
+.client-name {
+    font-size: 26px; 
+    font-weight: bold;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.client-role {
+    font-size: 17px; 
+    color: #555;
+}
+.top-doctor-section {
+    padding: 50px 0;
+}
+
+.top-doctor-title {
+    color:#2EC4B6;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.top-doctor-heading {
+    font-size:42px;
+    font-weight:550;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.top-doctor-text {
+    font-size: 17px;
+    color: #4D4D4D;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+.top-doctor-btn {
+    background-color: #2EC4B6;
+    color: white;
+    padding: 14px 35px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+
+.top-doctor-btn:hover {
+    background-color: #26a69a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .top-doctor-heading {
+        font-size: 36px;
+    }
+    .top-doctor-btn {
+        margin-top: 20px;
+    }
+}
+.doctor-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #b6e2df;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .doctor-card:hover {
+    transform: translateY(-10px);
+} */
+
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    background: #DDF7F3;
+}
+
+.doctor-info {
+    padding: 20px;
+}
+
+.doctor-name {
+    font-size: 25px;
+    font-weight: 650;
+    margin: 10px 0 5px;
+}
+
+.doctor-title {
+    font-size: 17px;
+    color:#555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2EC4B6;
+}
+
+@media (max-width: 991px) {
+    .doctor-name {
+        font-size: 18px;
+    }
+    .doctor-title {
+        font-size: 15px;
+    }
+}
+.form-sect{
+    background-color: #f1fffe;
+    padding-top: 80px;
+}
+
+.appointment-form {
+    background: white;
+    padding: 80px 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form input, 
+.appointment-form select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.appointment-form textarea {
+    width: 100%;
+    height:150px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.appointment-form button {
+    background-color: #2EC4B6;
+    color: white;
+    padding: 14px 35px;
+    font-weight: 650;
+    font-size: 18px;
+    border-radius: 13px;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 992px) {
+    .appointment-form {
+        padding: 30px;
+        margin-top: 20px;
+       
+    }
+}
+.section-title {
+    color: #2EC4B6;
+    font-weight: bold;
+}
+
+.appointment-title {
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Left Side: Service Steps */
+.service-steps {
+    position: relative;
+}
+
+.service-item {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    /* width: 60px;
+    height: 60px; */
+    color: #2EC4B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.text h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.text p {
+    margin: 0;
+    font-size: 17px;
+    padding-top:10px;
+    color: #666;
+}
+
+/* Right Side: Contact Card */
+.contact-card {
+    background: #2EC4B6;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight:550;
+    text-align: center;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    /* width: 38px;
+    height: 38px;
+    background: ; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.contact-text {
+    font-size: 19px;
+    font-weight:550;
+
+}
+@media (max-width: 1024px) {
+    .form-sect .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-sect .col-md-6 {
+        width: 100%;
+    }
+    /* service-steps & contact-card remain side-by-side */
+    .form-sect .row .col-md-6 .row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .service-steps, 
+    .contact-card {
+        width: 100%; 
+    }
+    .service-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        gap: 20px; 
+        padding: 5px 0; 
+    }
+
+    .icon {
+        flex-shrink: 0;
+        font-size: 30px; 
+    }
+
+    .text {
+        flex-grow: 1; 
+    }
+}
+
+@media (max-width: 768px) { 
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .service-steps, 
+    .contact-card {
+        width: 100%;
+    }
+}
+.blog-card {
+    background-color: #2ec4b6;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    transition: 0.3s;
+}
+/* .blog-card:hover {
+    transform: translateY(-5px);
+} */
+.blog-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.blog-card h5 {
+    font-weight: bold;
+}
+.blog-card .btn-learn-more {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blog-card .btn-learn-more:hover {
+    text-decoration: underline;
+}
+.blog-para-text{
+    font-size:17px;
+    color:#4D4D4D;
+    line-height: 200%;
+
+}
+       .newsletter-section {
+            background-color: #2ec4b6;
+            padding: 50px 35px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .newsletter-title {
+            font-weight: 500;
+            font-size: 31px;
+            font-family: 'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .newsletter-text {
+            font-size:17px;
+            color:#4D4D4D;
+        }
+
+        .input-group {
+            max-width: 450px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .form-control {
+            border-radius: 50px 0 0 50px;
+            padding: 12px 20px;
+            border: none;
+            flex-grow: 1;
+        }
+
+        .subscribe-button {
+            /* background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 0 50px 50px 0;
+            padding: 12px 25px; */
+            background-color: black;
+            color: white;
+            padding: 12px 25px;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .subscribe-button:hover {
+            background-color: #444;
+        }
+
+        @media (max-width: 992px) {
+            .newsletter-container {
+                text-align: center;
+            }
+            .input-group {
+                max-width: 100%;
+            }
+        }
+
+        /* @media (max-width: 768px) {
+            .input-group {
+                flex-direction: column;
+                border-radius: 10px;
+            }
+            .form-control {
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            .subscribe-button {
+                border-radius: 10px;
+            }
+        } */
+
+/*about us*/
+.about-main {
+    background: url('https://rykit.rometheme.pro/remedicare/wp-content/uploads/sites/17/2022/08/Untitled-2.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    padding: 35px 25px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.about-card-custom {
+    background-color: #f0fdfd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border:1px solid #b6e2df;
+    transition: transform 0.3s ease-in-out;
+}
+/* .about-card-custom:hover {
+    transform: translateY(-5px);
+} */
+.about-icon-box {
+    width: 100%; 
+    height: 200px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-icon-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+@media (max-width: 1024px) {
+    .services-container {
+        display: none;
+    }
+    .about-card-container {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-card-container .row {
+        flex-direction: column;
+
+    }
+    .about-card-container .col-md-6 {
+        width: 100%;
+
+    }
+    .s-about-f{
+        margin-top:20px;
+    }
+}
+/*services*/
+.service-sec{
+    padding-top: 40px;
+}
+.c-contact-card {
+    display: flex;
+    align-items: center;
+    max-width: 450px; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.c-icon {
+    background: #2ec4b6;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-card-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;
+}
+.c-social-card-title{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 550;  
+}
+.c-para-text {
+    margin: 0;
+    font-size:17px;
+    color:#4D4D4D;
+    line-height: 200%;
+}
+
+.c-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.c-social-icons a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    /* transition: background 0.3s ease-in-out, transform 0.3s; */
+}
+
+.c-social-icons a:hover {
+    /* transform: scale(1.2); */
+    background-color: #2ec4b6 !important;
+    color:white;
+}
+
+.social-card {
+    background-color: #CBF3F0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    cursor: pointer;
+    background-color: #2EC4B6;
+    color: white;
+    padding: 12px 35px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+    .c-contact-card {
+        max-width: 100%;
+    }
+    .contact-form button{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 368px) {
+    .c-contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c-icon {
+        margin-bottom: 10px;
+    }
+
+    .contact-card-title {
+        font-size: 16px;
+    }
+
+    .c-para-text {
+        font-size: 14px;
+        word-break: break-word;   /* Breaks long words */
+        overflow-wrap: break-word; /* Ensures wrapping */
+        white-space: normal;       /* Allows normal wrapping */
+        display: block;            /* Makes sure it occupies full width */
+        max-width: 100%; 
+    }
+    .c-social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .c-social-card-title{
+        font-size: 16px;
+        word-break: break-word;   
+        overflow-wrap: break-word; 
+        white-space: normal;       
+        display: block;           
+        max-width: 100%; 
+
+    }
+}
+@media (max-width:216px){
+    .c-social-icons {
+        flex-direction: column;
+        justify-content: center; 
+    }
+}
+.map-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top:100px;
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 180px;
+    }
+}
+.s-sec-section {
+    padding: 100px 35px;
+}
+
+.service-box {
+    background-color: #2ec4b6;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.s-l-para{
+    font-size: 18px;
+    color:#2ec4b6;
+    font-weight: 500;
+    padding-top: 10px;
+}
+        .s-l-c-text h6{
+           font-size: 18px;
+        }
+        .service-box h3 {
+            font-weight: bold;
+        }
+
+        .service-box ul {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0;
+            padding-top: 15px;
+        }
+
+        .service-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .service-box ul li i {
+            margin-right: 10px;
+        }
+        .s-right-column{
+            padding:35px;
+        }
+        .s-search-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%; /* Adjust width */
+            margin: auto;
+        }
+
+        .s-search-input {
+            width: 100%;
+            padding: 14px 20px;
+            padding-right: 50px; /* Space for icon */
+            border: 1px solid #2ec4b6;
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .s-search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2ec4b6;
+            cursor: pointer;
+        }
+        /* Free Consultation Card */
+        .consultation-card {
+            position: relative;
+            /* width: 320px;  */
+            text-align: center;
+            /* padding: 20px; */
+            border: 1px solid #2EC4B6; 
+            border-radius: 10px; 
+            overflow: hidden;
+            background: url('https://rykit.rometheme.pro/remedicare/wp-content/uploads/sites/17/2022/08/tes-services.png') no-repeat center center/cover;            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 450px; 
+        }
+
+        .consultation-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #CBF3F0; 
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        /* Content inside the card */
+        .consultation-card h3, 
+        .consultation-card p, 
+        .consultation-card a {
+            position: relative;
+            z-index: 1;
+        }
+
+        .consultation-card h3 {
+            font-weight: bold;
+            max-width: 80%;
+            padding-top: 80px;
+            color: black;
+        }
+
+        .consultation-card p {
+            color: #333;
+            max-width: 80%;
+        }
+    
+            .s-appointment-btn {
+                background-color: #2EC4B6;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                border: none;
+                padding: 16px 25px;
+                border-radius: 12px;
+                text-decoration: none;
+                display: inline-block;
+            }
+    
+            .s-appointment-btn i {
+                margin-right: 5px;
+            }
+    
+            .s-appointment-btn:hover {
+                background-color: #27b09f;
+            }
+@media (max-width: 1255px){
+    .consultation-card{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 992px){
+    .consultation-card{
+        width:100%;
+        background-size: contain;
+    }
+    .s-l-c-text{
+        padding-top:30px;
+    }
+}
+@media (max-width: 769px){
+   .s-dw-con{
+    padding-top:40px;
+   }
+}
+    
+.s-cont{
+    background-color: #CBF3F0;
+    border-radius: 5px;
+    padding:20px;
+}
+.s-make-app-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px 37px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:18px;
+    border-radius: 12px;
+    border: none; 
+    display: inline-block;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+.s-dow-brch-btn{
+    background-color: white;
+    color: var(--primary-color);
+    padding: 16px 37px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:18px;
+    border-radius: 12px;
+    border: 1px solid #2EC4B6; 
+    display: inline-block;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.s-service-box-tilte{
+        font-family:'Roboto','Inter', Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+    }
+    .s-service-box-tilte h3 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+/* Footer */
+.footer {
+    background-color: white;
+    padding: 50px 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto; 
+}
+
+/* Footer container */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer grid */
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Footer sections */
+.footer .col-md-4, 
+.footer .col-md-3, 
+.footer .col-md-2 {
+    margin-bottom: 20px;
+}
+
+/* Footer Logo */
+.footer-logo img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Footer Title */
+.footer-title {
+    font-weight: 650;
+    color:#2EC4B6;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+.footer-links, .footer-contact {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li, .footer-contact li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links li a, .footer-contact li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer-links li a:hover {
+    color: #14b8a6;
+}
+.footer-contact li i {
+    color: #14b8a6; 
+    margin-right: 10px; 
+}
+.border{
+    border-top: 2px solid black; 
+
+}
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+@media (max-width: 1150px) {
+    .footer .col-md-2, .footer .col-md-3:nth-child(3) {
+        display: none; 
+    }
+}
+
