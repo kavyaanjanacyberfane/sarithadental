@@ -147,7 +147,7 @@ main {
     background: url('https://rykit.rometheme.pro/remedicare/wp-content/uploads/sites/17/2022/08/teshero5.jpg') no-repeat center center;
     background-size: cover;
     color: black;
-    padding: 80px 20px;
+    padding: 30px 25px;
     min-height: 100vh; 
     display: flex;
     align-items: center;
@@ -727,12 +727,12 @@ main {
     align-items: center;
     gap: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 .top-doctor-btn:hover {
-    background-color: #26a69a;
     color: white;
+    transform: translateY(-6px);
 }
 
 @media (max-width: 768px) {
@@ -1115,9 +1115,18 @@ main {
     border:1px solid #b6e2df;
     transition: transform 0.3s ease-in-out;
 }
-/* .about-card-custom:hover {
+.about-card-custom:hover {
     transform: translateY(-5px);
-} */
+    border:1px solid #2ec4b6;
+}
+.about-card-custom a {
+    color: #000; /* Default color (black) */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.about-card-custom a:hover {
+    color: #2ec4b6!important; /* Change color on hover */
+}
 .about-icon-box {
     width: 100%; 
     height: 200px; 
