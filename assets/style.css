@@ -428,7 +428,22 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+.stats-section.in-view .stats-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.stats-item:nth-child(1) { transition-delay: 0.2s; }
+.stats-item:nth-child(2) { transition-delay: 0.4s; }
+.stats-item:nth-child(3) { transition-delay: 0.6s; }
+.stats-item:nth-child(4) { transition-delay: 0.8s; }
+.stats-item:nth-child(5) { transition-delay: 1s; }
+
 .stats-item h2 {
     font-size: 50px;
     font-weight: bold;
@@ -749,13 +764,22 @@ main {
     overflow: hidden;
     text-align: center;
     border: 1px solid #b6e2df;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(80px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
 }
 
-/* .doctor-card:hover {
+.doctor-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.doctor-card:hover {
     transform: translateY(-10px);
-} */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+
+}
 
 .doctor-card img {
     width: 100%;
@@ -841,6 +865,14 @@ main {
     align-items: center;
     gap: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.appointment-form button:hover {
+    background-color: #35b1a1; /* Slightly darker shade of teal */
+    transform: translateY(-3px); /* Slight lift effect */
+    color:white;
 }
 @media (max-width: 992px) {
     .appointment-form {
@@ -990,28 +1022,39 @@ main {
 .blog-card {
     background-color: #2ec4b6;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     padding: 20px;
-    transition: 0.3s;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition */
+    overflow: hidden;
+    box-sizing: border-box;
 }
-/* .blog-card:hover {
-    transform: translateY(-5px);
-} */
+
+/* Hover Effect - Smooth Zoom In */
+.blog-card:hover {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3); 
+    transform: scale(0.95);
+}
 .blog-card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
 }
-.blog-card h5 {
+.blog-card h4 {
     font-weight: bold;
 }
 .blog-card .btn-learn-more {
     color: white;
     font-weight: bold;
+    font-size: 20px;;
     text-decoration: none;
 }
 .blog-card .btn-learn-more:hover {
     text-decoration: underline;
+    color:#27496d;
+}
+.blog-para{
+    font-size: 18px;;  
 }
 .blog-para-text{
     font-size:17px;
@@ -1321,12 +1364,13 @@ main {
 }
 .map-container {
     width: 100%;
-    max-width: 100%;
+    max-width: 600px;
+    height: 350px;
+    margin: 20px auto;
+    border-radius: 8px;
     overflow: hidden;
-    border-radius: 10px;
-    padding-top:100px;
-}
-
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
 @media (max-width: 768px) {
     .map-container iframe {
         height: 200px;
